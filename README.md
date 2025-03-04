@@ -30,9 +30,9 @@ This Java program takes a string (containing only letters) and an integer as inp
 ## Example Usage
 
     ./gradlew app:run --console=plain
-    Enter a string(letters only): WelcometoEdmonton!
+    Enter a string(letters only): WelcometoEdmonton
     Enter a number: 5
-    Shifted string: 'nton!WelcometoEdmo'
+    Shifted string: 'ontonWelcometoEdm'
 
 ## Error Handling
 * The program ensures that the input string contains  letters.
