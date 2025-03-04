@@ -30,6 +30,7 @@ This Java program takes a string (containing only letters) and an integer as inp
 ## Example Usage
 
     ```sh
+    ./gradlew app:run --console=plain
     Enter a string : Welcome to Edmonton!
     Enter a number: 5
     Shifted string: 'nton!Welcome to Edmo'
