@@ -30,12 +30,14 @@ This Java program takes a string (containing only letters) and an integer as inp
 ## Example Usage
 
     ./gradlew app:run --console=plain
-    Enter a string : Welcome to Edmonton!
+    Enter a string(letters only): WelcometoEdmonton!
     Enter a number: 5
-    Shifted string: 'nton!Welcome to Edmo'
+    Shifted string: 'nton!WelcometoEdmo'
 
 ## Error Handling
 * The program ensures that the input string contains  letters.
+* The program handles errors when the input number is a negative, zero, positive.
+* The program handles cases that string input is null, empty, etc.
 * If the shift value is larger than the string length, it wraps around properly.
 
 ## License
