@@ -35,8 +35,8 @@ This Java program takes a string (containing only letters) and an integer as inp
     Shifted string: 'nton!Welcome to Edmo'
 
 ## Error Handling
-The program ensures that the input string contains  letters.
-If the shift value is larger than the string length, it wraps around properly.
+* The program ensures that the input string contains  letters.
+* If the shift value is larger than the string length, it wraps around properly.
 
 ## License
 This project is open-source. Feel free to modify and distribute it.
