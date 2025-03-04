@@ -1,5 +1,18 @@
+
+import java.util.Scanner;
+
 class Main {
     public static void main(String[] args) {
-        System.out.println("Hello");
+
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+
+        System.out.println(text);
+
+        scanner.close();
+    }
+
+    public static String shift(String original, int number) {
+        return "";
     }
 }
