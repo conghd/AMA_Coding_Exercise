@@ -29,9 +29,10 @@ This Java program takes a string (containing only letters) and an integer as inp
 
 ## Example Usage
 
-Enter a string : Welcome to Edmonton!
-Enter a number: 5
-Shifted string: 'nton!Welcome to Edmo'
+    ```sh
+    Enter a string : Welcome to Edmonton!
+    Enter a number: 5
+    Shifted string: 'nton!Welcome to Edmo'
 
 ## Error Handling
 The program ensures that the input string contains  letters.
