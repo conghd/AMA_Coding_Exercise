@@ -1,4 +1,3 @@
-package com.ama.exercise;
 
 /**
  * MyStringUtils is a simple class for string manipulation.
