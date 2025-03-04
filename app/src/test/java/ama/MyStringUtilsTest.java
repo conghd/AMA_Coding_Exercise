@@ -10,7 +10,7 @@ class MyStringUtilsTest {
         int number = 12;
         String expected = null;
 
-        assertEquals(MyStringUtils.shift(str, number), expected);
+        assertEquals(MyStringUtils.shiftString(str, number), expected);
     }
 
     @Test
@@ -19,7 +19,7 @@ class MyStringUtilsTest {
         int number = 25;
         String expected = "";
 
-        assertEquals(MyStringUtils.shift(str, number), expected);
+        assertEquals(MyStringUtils.shiftString(str, number), expected);
     }
 
     @Test
@@ -28,7 +28,7 @@ class MyStringUtilsTest {
         int number = 20;
         String expected = "x";
 
-        assertEquals(MyStringUtils.shift(str, number), expected);
+        assertEquals(MyStringUtils.shiftString(str, number), expected);
     }
 
     @Test
@@ -37,7 +37,7 @@ class MyStringUtilsTest {
         int number = 0;
         String expected = "Hello world!";
 
-        assertEquals(MyStringUtils.shift(str, number), expected);
+        assertEquals(MyStringUtils.shiftString(str, number), expected);
     } 
 
     @Test
@@ -46,25 +46,25 @@ class MyStringUtilsTest {
         int number = -2;
         String expected = "llo world!He";
 
-        assertEquals(MyStringUtils.shift(str, number), expected);
+        assertEquals(MyStringUtils.shiftString(str, number), expected);
     } 
 
     @Test
     void testShiftStringWithAPositiveNumber() {
-        String str = "Welcome to AMA!";
+        String str = "Welcome to String Shifter!";
         int number = 5;
-        String expected = " AMA!Welcome to";
+        String expected = "fter!Welcome to String Shi";
 
-        assertEquals(MyStringUtils.shift(str, number), expected);
+        assertEquals(MyStringUtils.shiftString(str, number), expected);
     } 
 
     @Test
     void testShiftStringWithABigNumber() {
-        String str = "Welcome to AMA!";
-        int number = 67;
-        String expected = "to AMA!Welcome ";
+        String str = "Welcome to String Shifter!";
+        int number = 60;
+        String expected = "Shifter!Welcome to String ";
 
-        assertEquals(MyStringUtils.shift(str, number), expected);
+        assertEquals(MyStringUtils.shiftString(str, number), expected);
     } 
 
 

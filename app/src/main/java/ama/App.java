@@ -25,7 +25,7 @@ public class App {
         Integer num = scanner.nextInt();
 
         // Shift characters of the string
-        String output = MyStringUtils.shift(text, num);
+        String output = MyStringUtils.shiftString(text, num);
 
         System.out.println("Output: '" + output + "'");
 
@@ -33,6 +33,6 @@ public class App {
     }
 
     public String getGreeting() {
-        return "Hello AMA Coding Exercise!";
+        return "Hello String Shifter!";
     }
 }

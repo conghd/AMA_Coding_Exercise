@@ -38,6 +38,8 @@ tasks.named('test') {
     testLogging {
         events "passed"
     }
+
+    testLogging.showStandardStreams = true
 }
 
 run {

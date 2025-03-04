@@ -11,39 +11,39 @@ package ama;
 class MyStringUtils {
 
     /**
-     *  Return a shifted string from original one 
+     *  Return a shifted string from str one 
      * 
-     * @param   original    a string obtained from user's input
-     * @param   number         a numberber of shift
+     * @param   str    a string obtained from user's input
+     * @param   shift         a number of shift
      * @return              The shifted string
      */
-    public static String shift(String original, int number) {
+    public static String shiftString(String str, int shift) {
         // Check if the string is null or its length is 0, 1
-        if (original == null || original.length() <= 1) {
-            return original;
+        if (str == null || str.length() <= 1) {
+            return str;
         }
 
-        int len = original.length();
+        int len = str.length();
 
-        // If number is 0 then return the original one
-        if (number == 0) {
-            return original;
+        // If shift is 0 then return the str one
+        if (shift == 0) {
+            return str;
         }
 
-        // If number is negative, then covert to an equivalent positive numberber
-        while (number < 0) {
-            number += len;
+        // If shift is negative, then covert to an equivalent positive shift 
+        while (shift < 0) {
+            shift += len;
         }
 
-        // If number is larger than the string's len, then convert to an equivalent numberber
+        // If shift is larger than the string's len, then convert to an equivalent shift 
         // which is smaller than the string's len
-        if (number >= len) {
-            number %= len;
+        if (shift >= len) {
+            shift %= len;
         }
 
         char[] chars = new char[len];
         for (int i = 0; i < len; i++) {
-            chars[(i + number) % len] = original.charAt(i);
+            chars[(i + shift) % len] = str.charAt(i);
         }
 
         return String.valueOf(chars);
