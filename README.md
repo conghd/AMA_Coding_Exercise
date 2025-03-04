@@ -6,7 +6,7 @@ This Java program takes a string (containing only letters) and an integer as inp
 
 ## Requirements
 - Java 8 or later
-- Gradle available
+- Gradle 8.0.2 or later 
 - A terminal or command prompt to run the program
 
 
