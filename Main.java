@@ -13,6 +13,30 @@ class Main {
     }
 
     public static String shift(String original, int number) {
-        return "";
+        // Check if the string is null or its length is 0, 1
+        // Then it is not needed to convert
+        if (original == null || original.length() <= 1) {
+            return original;
+        }
+
+        int len = original.length();
+        if (num == 0) {
+            return original;
+        }
+
+        while (num < 0) {
+            num += len;
+        }
+
+        if (num >= len) {
+            num %= len;
+        }
+
+        char[] chars = new char[len];
+        for (int i = 0; i < len; i++) {
+            chars[(i + num) % len] = original.charAt(i);
+        }
+
+        return String.valueOf(chars);
     }
 }
