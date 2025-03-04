@@ -34,7 +34,7 @@ Enter a number: 5
 Shifted string: 'nton!Welcome to Edmo'
 
 ## Error Handling
-The program ensures that the input string contains only letters.
+The program ensures that the input string contains  letters.
 If the shift value is larger than the string length, it wraps around properly.
 
 ## License
